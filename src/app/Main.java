@@ -11,7 +11,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("\n1. Введіть ціле число: ");
-        int number = scanner.nextInt(); //<-зчитуємо значення цілого числа для обчислення квадрата
+        int number = scanner.nextInt();
 
         System.out.println("Квадрат числа " + number + " дорівнює " + calculateSquare(number));
 
@@ -79,9 +79,8 @@ public class Main {
     public static String reverseLine (String line) {
 
         String sumReversLine = "";
-
         for (int i = line.length() - 1; i >= 0; i--)
-            sumReversLine += line.charAt(i);
+            sumReversLine += line.charAt(i); // витягуємо кожен символ рядка, починаючи з кінця
         return sumReversLine;
     }
 
